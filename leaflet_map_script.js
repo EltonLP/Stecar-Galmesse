@@ -1,4 +1,4 @@
-// Função para inicializar o mapa Leaflet
+
 function initLeafletMap() {
     // Coordenadas exatas da localização da empresa (extraídas do link do Google Maps)
     // 25°40'16.7"S 32°34'46.1"E = -25.671316, 32.579470
@@ -12,8 +12,7 @@ function initLeafletMap() {
         attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         maxZoom: 19
     }).addTo(map);
-
-    // Criar ícone personalizado para o marcador
+    
     const customIcon = L.divIcon({
         html: `
             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,10 +25,8 @@ function initLeafletMap() {
         popupAnchor: [0, -40]
     });
 
-    // Adicionar marcador
     const marker = L.marker(location, { icon: customIcon }).addTo(map);
 
-    // Conteúdo do popup
     const popupContent = `
         <div style="padding: 15px; max-width: 300px; font-family: Arial, sans-serif;">
             <h3 style="margin: 0 0 10px 0; color: #eb5a0a; font-size: 18px;">Stecar Galmesse</h3>
@@ -55,29 +52,22 @@ function initLeafletMap() {
         </div>
     `;
 
-    // Adicionar popup ao marcador
     marker.bindPopup(popupContent);
 
-    // Opcional: Abrir o popup automaticamente
-    // marker.openPopup();
-
-    // Adicionar controles de zoom personalizados
     map.zoomControl.setPosition('topright');
-
-    // Adicionar evento de clique no mapa para mostrar coordenadas (útil para desenvolvimento)
+    
     map.on('click', function(e) {
         console.log(`Coordenadas clicadas: ${e.latlng.lat}, ${e.latlng.lng}`);
     });
 
-    // Adicionar círculo para destacar a área da empresa (opcional)
+    // Adicionar círculo para destacar a área da empresa
     const circle = L.circle(location, {
         color: '#eb5a0a',
         fillColor: '#eb5a0a',
         fillOpacity: 0.1,
-        radius: 500 // raio em metros
+        radius: 500 
     }).addTo(map);
 
-    // Adicionar tooltip ao círculo
     circle.bindTooltip("Área de operação da Stecar Galmesse", {
         permanent: false,
         direction: 'center'
@@ -101,7 +91,6 @@ function handleMapError() {
     }
 }
 
-// Inicializar o mapa quando a página carregar
 document.addEventListener('DOMContentLoaded', function() {
     try {
         // Verificar se o Leaflet está disponível
@@ -117,7 +106,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Adicionar estilos CSS para o ícone personalizado
 const style = document.createElement('style');
 style.textContent = `
     .custom-div-icon {

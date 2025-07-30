@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stecar Galmesse</title>
+  <link rel="stylesheet" href="stecarpic_leaflet.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.js"></script>
+  <script src="leaflet_map_script.js" defer></script>  
+</head>
+<body>
+
+<header class="header"> 
+  <div class="logo">STECAR GALMESSE</div>
+  <nav class="nav-menu"> 
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre Nós</a>
+    <a href="#produtos">Produtos</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#localizacao">Localização</a>
+    <a href="#contacto" class="btn-contact">Contacto</a>
+  </nav>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="hero-content">
+    <h1>STECAR GALMESSE</h1>
+    <h2>Exploração de Inertes de Alta Qualidade</h2>
+    <p>Fornecemos areia branca e areia vermelha extraídas com rigor técnico e padrão de<br> qualidade, ideais para obras de pequeno, médio e grande porte.</p>
+    <div class="buttons">
+      <button class="btn-primary" onclick="document.getElementById(\'produtos\').scrollIntoView()">Nossos Produtos</button>
+      <button class="btn-secondary" onclick="document.getElementById(\'contacto\').scrollIntoView()">Entre em Contacto</button>
+    </div>
+  </div>
+</section>
+
+<section class="about-us section-padding" id="sobre"> 
+  <h2 class="section-title">Sobre Nós</h2>
+  <div class="main-row"> 
+    <div class="text-about"> 
+      <h3>STECAR GALMESSE</h3>
+      <p>A STECAR GALMESSE é uma empresa 100% moçambicana, sediada na Matola, especializada na exploração de Inertes (Areias).</p>
+      <p>A experiência, expertise e variedade de equipamentos de última geração da STECAR GALMESSE ajudam a otimizar o tempo de trabalho, operar com muita eficiência e aumentar a segurança em todos os sectores de atividade.</p>
+      <h4>Nossa Missão</h4>
+      <p>Fornecer materiais de construção de alta qualidade, contribuindo para o desenvolvimento da infraestrutura moçambicana com responsabilidade ambiental e compromisso com a excelência.</p>
+    </div>
+    <div class="image-about"> 
+      <img src="pics/IMG-20250515-WA0038.jpg" alt="Caminhão da empresa" />
+    </div>
+  </div>
+
+  <div class="values-cards"> 
+    <div class="value-card"> 
+      <h4>Qualidade</h4>
+      <p>Rigoroso controle de qualidade em todos os nossos produtos.</p>
+    </div>
+    <div class="value-card"> 
+      <h4>Sustentabilidade</h4>
+      <p>Extração legalizada e com respeito ao meio ambiente.</p>
+    </div>
+    <div class="value-card"> 
+      <h4>Eficiência</h4>
+      <p>Equipamentos modernos para otimizar o processo de extração.</p>
+    </div>
+    <div class="value-card"> 
+      <h4>Compromisso</h4>
+      <p>Entrega pontual e atendimento personalizado ao cliente.</p>
+    </div>
+  </div>
+</section> 
+
+<section class="section-padding products-section" id="produtos"> 
+    <h2 class="section-title">Nossos Produtos</h2> 
+    <p class="section-description">Oferecemos areia branca e areia vermelha extraídas com rigor técnico e padrão de qualidade,<br> ideais para obras de pequeno, médio e grande porte.</p>
+    <div class="products-cards-container">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="pics/IMG-20250515-WA0036.jpg" alt="Areia Branca"/>
+            </div>
+            <div class="product-content">
+                <div class="product-header">
+                    <h3 class="product-title">Areia Branca</h3>
+                    <span class="product-price">250 MZN/M³</span>
+                </div>
+                <p class="product-description">Nossa areia branca é fina, limpa e perfeita para acabamentos, rebocos e produção de argamassas de alta performance. Ideal para quem busca um acabamento profissional e duradouro.</p>
+                <h4 class="applications-title">Aplicações Recomendadas:</h4>
+                <ul class="applications-list">
+                    <li>Acabamentos finos</li>
+                    <li>Rebocos</li>
+                    <li>Argamassas de alta performance</li>
+                    <li>Assentamento de cerâmicas</li>
+                </ul>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-image">
+                <img src="pics/IMG-20250515-WA0034.jpg" alt="Areia Vermelha"/>
+            </div>
+            <div class="product-content">
+                <div class="product-header">
+                    <h3 class="product-title">Areia Vermelha</h3>
+                    <span class="product-price">200 MZN/M³</span>
+                </div>
+                <p class="product-description">A areia vermelha é mais encorpada e indicada para fundações, alvenarias e concretagens em geral. Excelente custo-benefício e resistência comprovada para estruturação de obras.</p>
+                <h4 class="applications-title">Aplicações Recomendadas:</h4>
+                <ul class="applications-list">
+                    <li>Fundações</li>
+                    <li>Alvenarias</li>
+                    <li>Concretagens</li>
+                    <li>Estruturação de obras</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-padding benefits-section">
+    <h2 class="section-title">Benefícios do nosso material</h2>
+    <div class="benefits-container">
+        <div class="benefit-item">
+            <div class="benefit-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="#eb5a0a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <p>Extração legalizada e sustentável</p>
+        </div>
+        <div class="benefit-item">
+            <div class="benefit-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="#eb5a0a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <p>Entrega rápida e segura</p>
+        </div>
+        <div class="benefit-item">
+            <div class="benefit-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 11H1v12h8V11zm15 0h-8v12h8V11zM10 3H6L4 6v5h8V6l-2-3z" stroke="#eb5a0a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <p>Qualidade garantida em cada metro cúbico</p>
+        </div>
+        <div class="benefit-item">
+            <div class="benefit-icon">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="#eb5a0a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <p>Atendimento personalizado</p>
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <h3 class="cta-title">Faça já o seu pedido!</h3>
+        <p class="cta-description">Entre em contato pelo WhatsApp ou telefone e solicite uma cotação personalizada com condições especiais para compras em grandes quantidades.</p>
+        <button class="btn-primary" onclick="document.getElementById(\'contacto\').scrollIntoView()">Solicitar Cotação</button>
+    </div>
+</section>
+
+<section class="section-padding services-section" id="servicos">
+    <h2 class="section-title">Nossos Serviços</h2>
+    <div class="services-container">
+        <div class="service-card">
+            <div class="service-image">
+                <img src="pics/IMG-20250515-WA0036.jpg" alt="Exploração de Areia Branca"/>
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Exploração de Areia Branca</h3>
+                <p class="service-description">Extração especializada de areia branca com equipamentos de última geração, garantindo a qualidade e pureza do material para acabamentos de alta qualidade.</p>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-image">
+                <img src="pics/IMG-20250515-WA0035.jpg" alt="Exploração de Areia Vermelha"/>
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Exploração de Areia Vermelha</h3>
+                <p class="service-description">Extração de areia vermelha para fundações e estruturas, com controle rigoroso de qualidade e granulometria adequada para construção civil.</p>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-image">
+                <img src="pics/IMG-20250515-WA0034.jpg" alt="Venda de Areia"/>
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Venda de Areia</h3>
+                <p class="service-description">Comercialização de areia branca e vermelha em diferentes quantidades, desde pequenos volumes para obras residenciais até grandes volumes para projetos industriais.</p>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-image">
+                <img src="pics/IMG-20250512-WA0005.jpg" alt="Aluguer de camiões"/>
+            </div>
+            <div class="service-content">
+                <h3 class="service-title">Aluguer de camiões</h3>
+                <p class="service-description">Serviço de aluguer de camiões especializados para transporte de materiais de construção, com motoristas experientes e equipamentos em excelente estado.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-padding location-section" id="localizacao"> 
+    <h2 class="section-title">Localização</h2>
+    <div class="location-container">
+        <div class="location-icon">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#eb5a0a"/>
+            </svg>
+        </div>
+        <div class="location-info">
+            <h3>Visite as nossas instalações</h3>
+            <p>Estamos localizados na Matola, Moçambique. Venha conhecer as nossas instalações e operações de extração.</p>
+        </div>
+        
+        <!-- Div para o Leaflet Map -->
+        <div id="leaflet-map" class="leaflet-map"></div>
+    </div>
+</section>
+
+<section class="section-padding contact-section" id="contacto">
+    <h2 class="section-title">Contacte-nos</h2>
+    <p class="contact-subtitle">Entre em contacto connosco para mais informações sobre os nossos produtos e serviços.</p>
+    
+    <div class="contact-container">
+        <div class="contact-form-section">
+            <h3>Envie-nos uma mensagem</h3>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone">
+                </div>
+                <div class="form-group">
+                    <label for="assunto">Assunto</label>
+                    <input type="text" id="assunto" name="assunto" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Enviar Mensagem</button>
+            </form>
+        </div>
+        
+        <div class="contact-info-section">
+            <h3>Informações de Contacto</h3>
+            <div class="contact-info-item">
+                <h4>Endereço</h4>
+                <p>Matola, Moçambique</p>
+            </div>
+            <div class="contact-info-item">
+                <h4>Telefone</h4>
+                <p>+258 84 408 7180</p>
+                <p>+258 87 408 7180</p>
+            </div>
+            <div class="contact-info-item">
+                <h4>Email</h4>
+                <p>stecarminasc@gmail.com</p>
+            </div>
+            <div class="contact-info-item">
+                <h4>Horário de Funcionamento</h4>
+                <p>Segunda a Sábado: 8h00 - 17h00<br>
+                Domingo: Fechado</p>
+            </div>
+            
+            <div class="contact-buttons">
+                <a href="https://wa.me/258841234567" class="btn-whatsapp" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                    </svg>
+                    WhatsApp
+                </a>
+                <a href="tel:+258841234567" class="btn-phone">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                    </svg>
+                    Ligar Agora
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>STECAR GALMESSE</h3>
+            <p>Empresa 100% moçambicana especializada na exploração de inertes de alta qualidade para a construção civil.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Links Úteis</h4>
+            <ul>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#localizacao">Localização</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Contacto</h4>
+            <p>Telefone: +258 84 123 4567</p>
+            <p>Email: info@stecargalmesse.co.mz</p>
+            <p>Endereço: Matola, Moçambique</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Stecar Galmesse. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+</body>
+</html>
+
